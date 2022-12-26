@@ -1,0 +1,21 @@
+{
+    "name": "Drone License Error Remover",
+    "version": "1.0.0",
+    "description": "drone license error remover",
+    "manifest_version": 3,
+    "author": "Doğukan Şahintürk",
+    "permissions": ["activeTab", "scripting","contentSettings"],
+    "content_scripts": [
+        {
+          "matches": ["*://drone.inhouse.dh-darkstores-live.net/*"],
+          "js": ["index.js"]
+        }
+      ],
+    "host_permissions": ["http://*/*","https://*/*"],
+    "action": {
+        "default_icon": { 
+            "16": "favicon.png"
+        },
+        "default_title": "Drone License Error Remover"
+    }
+}
